@@ -2,7 +2,7 @@
 
 namespace App.Web.Mvc.Controllers
 {
-	public class BlogControllercs : Controller
+	public class BlogController : Controller
 	{
 		public IActionResult Search(string query,int page)
 		{
