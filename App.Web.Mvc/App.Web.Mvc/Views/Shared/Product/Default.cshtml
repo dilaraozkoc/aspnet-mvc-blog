@@ -1,0 +1,6 @@
+﻿@*@model List<Product>
+
+    @foreach(var item in Model)
+    {
+        @await Component.InvokeAsync("ProductItem",new { Title = item.Title, StarCount = item.StarCount, OldPrice = item.OldPrice, Price = item.Price, ImageUrl = item.ImageUrl, isSale = item.isSale  })
+    }*@
