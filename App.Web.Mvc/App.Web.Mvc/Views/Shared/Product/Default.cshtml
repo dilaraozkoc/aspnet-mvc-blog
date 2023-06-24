@@ -1,6 +1,7 @@
-﻿@*@model List<Product>
+﻿@model List<Product>
 
     @foreach(var item in Model)
     {
-        @await Component.InvokeAsync("ProductItem",new { Title = item.Title, StarCount = item.StarCount, OldPrice = item.OldPrice, Price = item.Price, ImageUrl = item.ImageUrl, isSale = item.isSale  })
-    }*@
+        <vc:ProductItem,new { Title=item.Title, StarCount=item.StarCount, OldPrice=item.OldPrice, Price=item.Price, ImageUrl=item.ImageUrl, isSale=item.isSale } />
+       @* @await Component.InvokeAsync("ProductItem",new { Title = item.Title, StarCount = item.StarCount, OldPrice = item.OldPrice, Price = item.Price, ImageUrl = item.ImageUrl, isSale = item.isSale  })*@
+    }

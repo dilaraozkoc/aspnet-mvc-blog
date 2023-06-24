@@ -2,7 +2,7 @@
 using App.Web.Mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 
-public class ProductViewViewComponent : ViewComponent
+public class ProductItemViewComponent : ViewComponent
 {
     public async Task<IViewComponentResult> InvokeAsync(string title, int starCount, decimal oldPrice, decimal price, string imageUrl, bool isScale)
     {
